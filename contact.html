@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="card.css">
+    <title>Contact Us noob-Coders</title>
+  </head>
+  <body>
+    <header>
+        <div id="topheader" class="p-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-right">
+                        <!-- "text-right":- to place the element in the right side -->
+                        <a href="tel:9904733108" class="p-1"><i class="fas fa-phone"></i> (+91)9904733108</a>
+                        <a href="mailto:thakuraman989@gmail.com" class="p-1"><i class="fas fa-envelope"></i>
+                            thakuraman989@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="container-fluid Navbar px-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"
+            style="color: blue; font-weight: bold; text-shadow: -1px -.5px white;font-size: 30px;font-family: Arial, Helvetica, sans-serif;">noob-Coders</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Mini-Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="calculator.html">Calculator</a>
+                  <a class="dropdown-item" href="stopwatch.html">StopWatch</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Letter Case Converter</a>
+                </div>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            
+            <button type="button" class="btn btn-outline-danger ml-0" data-toggle="modal" data-target="#exampleModal" style="text-align: center;">
+              Login
+            </button>
+            <button type="button" class="btn btn-outline-danger ml-sm-1 " data-toggle="modal" data-target="#exampleModal2">
+              SignUp
+            </button>
+            
+          </div>
+        </nav>
+      </div>
+      <!-- Navbar Ending -->
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal-2 -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">SignUp</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="First name *">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Last name *">
+              </div>
+              <br><br>
+              <div class="col-md-6">
+                <input type="number" class="form-control text-danger" placeholder="Contact Number *">
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control text-d" placeholder="Email *">
+              </div>
+              <br><br>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    <section class="top-section-contact">
+        <div class="container-fluid ">
+            <div class="row">
+                <div class="col-12">
+                     
+                    <ol class="breadcrumb pl-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Contact Us</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Breadcrumb Section -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 p-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ullam impedit necessitatibus
+                        provident odit iusto, sequi, ipsam at ea reiciendis dolorum nihil quam sint totam dicta
+                        reprehenderit nisi? Sint, ratione.</p>
+                        <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form >
+                        <div class="form-row">
+
+                            <div class="form-group col-md-6">
+                                <input type="text" placeholder="Full Name *" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" placeholder="Email *" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-6">
+                                <input type="number" placeholder="Contact Number *" class="form-control">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <select name="" class="form-control">
+                                    <option selected>Country *</option>
+                                    <option value="">India</option>
+                                    <option value="">Australia</option>
+                                    <option value="">Nepal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-12">
+                                <input type="text" placeholder="Subject *" class="form-control">
+                            </div>
+                            
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-12">
+                                <textarea name="" class="form-control" cols="30" rows="3"></textarea>
+                            </div>
+                            
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-12 text-center">
+                                <button class="btn btn-lg btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
+                            </div>
+                            
+                        </div>
+                    </form>
+                   
+                </div>
+                <div class="col-md-6 address" style="font-weight: bold;">
+                        <h5>Call Us / Whatsapp</h5>
+                        <p><a href="tel:9904733108" class="p-1"><i class="fas fa-phone"></i> (+91)9904733108</a></p>
+                        <h5>Email</h5>
+                        <p><a href="mailto:thakuraman989@gmail.com" class="p-1"><i class="fas fa-envelope"></i>
+                            thakuraman989@gmail.com</a></p>
+                        <h5>Working Hours</h5>
+                        <p>Mon - Fri : 9am - 6pm(IST)</p>
+                        <h5>Address</h5>
+                        <p>
+                            xyz estate ,Royale Palace station -west, Gujarat - 396191, India
+                        </p>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="iFrane">
+        <div class="container-fluid">
+            <!-- <div class="embed-responsive embed-responsive-16by9">  -->
+
+                <iframe class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119681.86407375276!2d72.84386166411582!3d20.380487924549673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be0ce2c01246603%3A0xca6d49eb7baace15!2sVapi%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1593251301992!5m2!1sen!2sin"
+                frameborder="0" height="400px" width="100%" style="border: 0;"></iframe>
+            </div>
+        <!-- </div> -->
+    </section>
+    <!-- Footer -->
+<div class="container-fluid mx-0 px-0">
+    
+  <footer class="container-fluid mx-0 px-0 text-center text-light bg-dark">
+    <p  style="font-weight: bold; font-size: 35px; color: orangered; text-shadow: -2px -1px black;">© noob-Coders by Aman Thakur 2020-2021</p>
+  </footer>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

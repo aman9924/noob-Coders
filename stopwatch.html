@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        body
+        {
+            background: linear-gradient(to right, #2193b0, #6dd5ed)
+            /* background-color: blueviolet; */
+        }
+        #clock
+        {
+            margin-left: 480px;
+            margin-top: 40px;
+            border: 3px solid;
+            width: 550px;
+            height: 550px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 120px;
+            font-weight: bold;
+            border-radius: 50%;
+            text-shadow: -2px -1px orange;
+            overflow: hidden;
+            background: linear-gradient(to top, #0fd850 0%, #f9f047 100%)
+        }
+        .container
+        {
+            position: absolute;
+            margin-top: 2px;
+            left: 650px;
+            padding: 25px;
+            
+        }
+        .btn
+        {
+            font-size: 40px;
+            border: 2px solid red;
+            border-radius: 10px;
+            background-color: orangered;
+            transition-property: all;
+            transition-duration: 1s;
+            margin: 3px;
+        
+        }
+        .btn:hover
+        {
+            transition-property: all;
+            transition-duration: 1s;
+            cursor: pointer;
+            background-color: orange;
+            transform: scale(1.1);
+        }
+        h1
+        {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 50px;
+            text-shadow: -2px -1px orange;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <div id="clock">00:00:00</div>
+    <div class="container">
+    <button class="btn" id="btn-1" onclick="timer()">Start</button>
+    <button class="btn" id="btn-2" onclick="reset()">Clear</button>
+</div> 
+ 
+<script>
+    let seconds=0;
+    let min=0;
+    let hrs=0;
+    let interval=null;
+    let displayseconds=0;
+    let displaymin=0;
+    let displaymili=0;
+    let status=false;
+    let milisecond=0;
+    function stopwatch()
+     {
+        
+        milisecond++;
+       if(milisecond/60==1)
+       {
+           milisecond=0;
+           seconds++;
+       
+        if(seconds/60==1)
+        {
+            seconds=0;
+            min++;
+        }
+       } 
+       if(milisecond<10)
+        {
+            displaymili="0"+milisecond.toString();
+        }
+        else
+        {
+            displaymili=milisecond;
+        }
+        if(seconds<10)
+        {
+            displayseconds="0"+seconds.toString();
+        }
+        else
+        {
+            displayseconds=seconds;
+        }
+        if(min<10)
+        {
+            displaymin = "0"+min.toString();
+        }
+        else
+        {
+            displaymin=min;
+        }
+
+        document.getElementById('clock').innerHTML= displaymin+":"+displayseconds+":"+displaymili;
+     }
+     function timer()
+     {
+       if(status==false)
+       {
+
+          interval= window.setInterval(stopwatch,25);
+          document.getElementById('btn-1').innerHTML="Stop"
+          status=true;
+       }
+       else
+       {
+         window.clearInterval(interval);
+           document.getElementById('btn-1').innerHTML="Start"
+          status=false;
+       }  
+     }
+    //  function clear()
+    //  {
+    //      window.clearInterval(interval);
+    //       seconds=0;
+    //       min=0;
+    //       hrs=0;
+    //        document.getElementById('clock').innerHTML="00:00:00";
+    //         document.getElementById('btn-1').innerHTML="Start"
+    //  }
+    function reset(){
+
+window.clearInterval(interval);
+seconds = 0;
+min = 0;
+milisecond = 0;
+document.getElementById("clock").innerHTML = "00:00:00";
+document.getElementById("btn-1").innerHTML = "Start";
+
+}
+</script>
+</body>
+</html>
